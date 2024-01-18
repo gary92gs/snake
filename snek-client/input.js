@@ -9,7 +9,7 @@ return stdin;
 };
 
 const handleUserInput = (socket) => {
-  stdin.on('data', (data) => {
+  stdin.on('data', (data) => { //listen for keyboard and use data to determine command/text sent to server
     if (data === '\u0003') {
       process.exit();
     }
