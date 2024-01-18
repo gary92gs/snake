@@ -25,6 +25,12 @@ const handleUserInput = (socket) => {
     if (data === 'a') {
       socket.write('Move: left');
     }
+    if (data === '1'){
+      socket.write('Say: Nom');
+    }
+    if (data === '2') {
+      socket.write('Say: Yum');
+    }
   });
 }
 
